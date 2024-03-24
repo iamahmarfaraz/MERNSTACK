@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+    <style>
+        .a1 {
+            border: 2px solid;
+            /* for single line between rows instead col */
+            border-collapse: collapse;
+            caption-side: bottom;
+        }
+
+        td {
+            border: 2px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="a1">
+        <caption>Table1</caption>
+        <thead>
+            <td>Month</td>
+            <td>Saving</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jan</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>Feb</td>
+                <td>11000</td>
+            </tr>
+            <tr>
+                <td>Mar</td>
+                <td>12000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>33000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
