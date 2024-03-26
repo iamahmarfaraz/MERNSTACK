@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+
+        .small {
+            font-size: small;
+        }
+
+        .large {
+            font-size: large;
+        }
+
+        /* pseudo class selector */
+        button:hover {
+            background-color: rgb(166, 134, 210);
+            color: rgb(60, 60, 228);
+        }
+
+        /* Nested Selector */
+        div p {
+            color: chartreuse;
+        }
+
+        /* Attribute Selector */
+        a[href="https://learn.codehelp.in/s/courses/6369142ae4b01a0643c56f13/take"]{
+            color: dodgerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Roll</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h1 class="small">This is small heading</h1>
+    <h2 class="small">This is small heading</h2>
+    <h3 class="small">This is small heading</h3>
+    <h4 class="large">This is large heading</h4>
+    <h5 class="large">This is large heading</h5>
+    <h5 class="large">This is large heading</h5>
+    <button>Submit</button>
+    <div>
+        <p>This is Nested CSS Example</p>
+    </div>
+    <a href="https://learn.codehelp.in/s/courses/6369142ae4b01a0643c56f13/take" target="_blank">Learn MernStack</a>
+</body>
+
+</html>
