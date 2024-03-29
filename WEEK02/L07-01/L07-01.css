@@ -1,0 +1,52 @@
+.container {
+    height: 600px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: 1px solid black;
+    margin: 10px;
+    height: 150px;
+    width: 150px;
+}
+
+#box1 {
+    background-color: blue;
+}
+
+#box2 {
+    background-color: burlywood;
+}
+
+#box3 {
+    background-color: chartreuse;
+}
+
+#box4 {
+    background-color: cornflowerblue;
+}
+
+.container1 {
+    height: 600px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+#box5 {
+    background-color: rgb(234, 50, 50);
+}
+
+#box6 {
+    background-color: rgb(119, 237, 170);
+}
+
+#box7 {
+    background-color: rgb(53, 67, 225);
+}
+
+#box8 {
+    background-color: rgb(211, 79, 221);
+}

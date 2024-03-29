@@ -1,0 +1,104 @@
+.box {
+    border: 1px solid black;
+    /* height: 150px; */
+    width: 150px;
+}
+
+.container {
+    height: 600px;
+    margin: 20px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: start; */
+    /* align-items: end; */
+    /* align-items: center;
+    align-items: baseline; */
+
+}
+
+#box1 {
+    background-color: blue;
+    order: 2;
+    height: 150px;
+}
+
+#box2 {
+    background-color: burlywood;
+    align-self: stretch;
+}
+
+#box3 {
+    background-color: chartreuse;
+    height: 150px;
+}
+
+#box4 {
+    background-color: cornflowerblue;
+    height: 150px;
+}
+
+.box1 {
+    border: 1px solid black;
+    width: 150px;
+}
+
+.container1 {
+    height: 600px;
+    margin: 20px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#box5 {
+    background-color: rgb(7, 251, 39);
+}
+
+#box6 {
+    background-color: rgb(188, 41, 48);
+}
+
+#box7 {
+    background-color: rgb(67, 47, 239);
+}
+
+#box8 {
+    background-color: rgb(248, 244, 23);
+}
+
+.box2 {
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+}
+
+.container2 {
+    height: 600px;
+    width: 350px;
+    margin: 20px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#box9 {
+    background-color: rgb(7, 251, 39);
+}
+
+#box10 {
+    background-color: rgb(188, 41, 48);
+}
+
+#box11 {
+    background-color: rgb(67, 47, 239);
+}
+
+#box12 {
+    background-color: rgb(248, 244, 23);
+}

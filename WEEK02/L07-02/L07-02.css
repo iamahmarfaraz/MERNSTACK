@@ -1,0 +1,161 @@
+p{
+    margin: 10px;
+    position: relative;
+    left: 40vw;
+}
+
+.box {
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+}
+
+/* FLEX-START */
+.container {
+    height: 600px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#box1 {
+    background-color: blue;
+}
+
+#box2 {
+    background-color: burlywood;
+}
+
+#box3 {
+    background-color: chartreuse;
+}
+
+#box4 {
+    background-color: cornflowerblue;
+}
+
+/* FLEX-END */
+.container1 {
+    height: 600px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#box5 {
+    background-color: rgb(136, 40, 192);
+}
+
+#box6 {
+    background-color: rgb(210, 194, 24);
+}
+
+#box7 {
+    background-color: rgb(14, 94, 46);
+}
+
+#box8 {
+    background-color: rgb(134, 10, 33);
+}
+
+/* CENTRE */
+.container2 {
+    height: 600px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#box9 {
+    background-color: rgb(40, 192, 146);
+}
+
+#box10 {
+    background-color: rgb(109, 105, 56);
+}
+
+#box11 {
+    background-color: rgb(51, 16, 166);
+}
+
+#box12 {
+    background-color: rgb(255, 8, 255);
+}
+
+/* SPACE-BETWEEN */
+.container3 {
+    height: 600px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#box13 {
+    background-color: rgb(102, 71, 36);
+}
+
+#box14 {
+    background-color: rgb(210, 76, 165);
+}
+
+#box15 {
+    background-color: rgb(22, 225, 103);
+}
+
+#box16 {
+    background-color: rgb(233, 23, 34);
+}
+
+/* SPACE-AROUND */
+.container4 {
+    height: 600px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#box17 {
+    background-color: rgb(27, 237, 209);
+}
+
+#box18 {
+    background-color: rgb(74, 29, 150);
+}
+
+#box19 {
+    background-color: rgb(82, 8, 57);
+}
+
+#box20 {
+    background-color: rgb(216, 233, 23);
+}
+
+/* SPACE-EVENLY */
+.container5 {
+    height: 600px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#box21 {
+    background-color: rgb(210, 4, 4);
+}
+
+#box22 {
+    background-color: rgb(176, 135, 247);
+}
+
+#box23 {
+    background-color: rgb(138, 219, 230);
+}
+
+#box24 {
+    background-color: rgb(243, 144, 95);
+}

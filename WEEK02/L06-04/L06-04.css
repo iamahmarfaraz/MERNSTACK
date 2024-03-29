@@ -1,0 +1,19 @@
+div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: aqua;
+    margin: 20px;
+}
+#translated{
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-bottom: 200px;
+    transform: perspective(200px) translateZ(-70px);
+}
+#scaled{
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-bottom: 200px;
+    transform: perspective(200px) scaleZ(2) rotateY(30deg);
+}

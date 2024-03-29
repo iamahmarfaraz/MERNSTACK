@@ -1,0 +1,43 @@
+html{
+    scroll-behavior: smooth;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid black;
+    /* Linear Gradient */
+    background-image: linear-gradient(rgb(228, 198, 228), white);
+    background-image: linear-gradient(to left, red, blue);
+}
+
+.radial {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid black;
+    /* Radial Gradient */
+    background-image: radial-gradient(rgb(183, 161, 203), rgb(139, 29, 236));
+}
+
+#shadow1 {
+    text-shadow: 2px 2px 2px rgb(118, 116, 116);
+}
+
+#shadow2 {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: rgb(145, 66, 220);
+    box-shadow: 10px 10px 10px rgb(116, 83, 147);
+}
+#max-height{
+    margin-top: 50px;
+    margin-left: 25px;
+    border: 1px solid black;
+    max-height: 250px;
+    width: 450px;
+    overflow: scroll;
+}
