@@ -1,0 +1,607 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+:root {
+    --ahmar: #e84949;
+    --mahnoor: #1066b7;
+
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.image {
+    width: 80px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.name:hover {
+    transform: scale(1.1);
+    text-shadow: 3px 3px 3px #0000003f;
+
+}
+
+.name div:hover {
+    font-weight: bold;
+    background: linear-gradient(to right, #212021, #1d1d86);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-item {
+    display: flex;
+    gap: 2rem;
+    padding: 0 4em;
+
+}
+
+.txt {
+    margin-left: -1.2rem;
+    margin-top: 13px;
+    font-size: 28px;
+}
+
+.nav-item div {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: default;
+    transition: all 0.5s ease-in;
+}
+
+a {
+    text-decoration: none;
+    /* will remove the underline from anchor tag/hyperlink */
+}
+
+.nav-item div a {
+    color: black;
+}
+
+.nav-item div:hover {
+    transform: scale(1.2);
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #0000003f;
+    transition: all 0.7s;
+}
+
+.nav-item div a:hover {
+    background: linear-gradient(to right, #212021, #1d1d86);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 5rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+}
+
+.faded-text {
+    user-select: none;
+    font-size: 7em;
+    color: rgb(231, 231, 231);
+
+    bottom: -16%;
+    left: -5%;
+    font-weight: bold;
+    transition: all 3s;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero-heading {
+    font-size: 35px;
+    color: #343d68;
+    font-weight: 500;
+    text-shadow: 3px 3px 3px #0000003f;
+    transition: all 0.5s;
+}
+
+.hero-heading:hover {
+    transform: scale(1.08);
+}
+
+.role {
+    color: #4e45d5;
+    font-weight: 800;
+}
+
+.hero-description {
+    margin-top: 1rem;
+    width: 70%;
+    font-weight: 500;
+    transition: all 0.8s;
+}
+
+.hero-description:hover {
+    transform: scale(1.05);
+}
+
+.button {
+    background-color: #d82d2d;
+    border: 3px solid transparent;
+    border-radius: 7px;
+    width: fit-content;
+    padding: 0.8rem 2.3rem;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    transition: all 0.5s;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+.button::before {
+    /* By this actual content se pehle content add hojayega */
+    content: "";
+    background-color: #1066b7;
+    border-radius: 7px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Starting me black bg nhi dikhega so */
+    transform: scaleX(0);
+    /* kidhr se kidhr hoga transition */
+    transform-origin: left;
+    transition: transform 0.5s;
+    z-index: -1;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 11px 4px rgba(8, 145, 176, 0.7);
+}
+
+.button:hover::before {
+    transform: scaleX(1);
+    border-radius: 7px;
+}
+
+/* .user-image img {
+    width: 260px;
+    height: 420px;
+} */
+
+.hero-right {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    z-index: 1;
+}
+
+.user-image {
+    padding: 2.5rem;
+    filter: grayscale(1);
+    z-index: -1;
+    animation: heroanime 4.5s linear infinite;
+    border-radius: 7px;
+}
+
+@keyframes heroanime {
+    0% {
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        filter: grayscale(1);
+        box-shadow: 4px 4px 21px rgb(7, 127, 192);
+    }
+
+    100% {
+        transform: scale(1);
+        filter: grayscale(0);
+    }
+}
+
+.icon-dots {
+    bottom: -1rem;
+    right: 0;
+    animation-name: dotsAnimation;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dotsAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+.icon-cube {
+    top: -0.8em;
+    right: 1em;
+    animation-name: cubeRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cubeRotate {
+    0% {
+        transform: rotateY(0deg) translateY(0px);
+    }
+
+    50% {
+        transform: rotateY(180deg) translateY(-12px);
+    }
+
+    100% {
+        transform: rotateY(360deg) translateY(0px);
+    }
+}
+
+.icon-circle {
+    z-index: 9;
+    left: 0;
+    bottom: 0;
+    animation-name: shakeEffect;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shakeEffect {
+
+    50% {
+        left: 5%;
+        bottom: 10%;
+    }
+
+}
+
+.icon-zigzag {
+    top: 1.5em;
+    left: -0.3em;
+    animation: zigzagAnimation 5s ease-in infinite;
+}
+
+@keyframes zigzagAnimation {
+    50% {
+        left: 5%;
+        top: 2%;
+    }
+}
+
+.icon-plus {
+    top: -0.8rem;
+    left: 50%;
+    animation: shakeEffectPlus 5s ease-in infinite;
+}
+
+@keyframes shakeEffectPlus {
+    50% {
+        top: 3%;
+        left: 48%
+    }
+}
+
+.project-section {
+    background-color: rgb(231, 231, 231);
+    margin-top: 4rem;
+}
+
+.page-header {
+    font-size: 90px;
+    width: fit-content;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0 auto;
+    color: var(--ahmar);
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.page-header:hover {
+    transform: scale(1.12);
+    text-shadow: 3px 3px 12px rgba(15, 169, 230, 0.877);
+    background: linear-gradient(to right, #212021, #1d1d86);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.project-card {
+    border-radius: 17px;
+    width: 90%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0px 0px 40px #1f1f1f;
+}
+
+.project-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 17px;
+    background-color: #1f1f1f9a;
+    transform: scaleX(1);
+    z-index: 0;
+    transform-origin: right;
+    transition: all 0.4s;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    border-radius: 17px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.project-card:hover::before {
+    transform: scaleX(1);
+}
+
+.project-card:hover::after {
+    transform: scaleX(0);
+}
+
+.project-number {
+    position: absolute;
+    z-index: 10;
+    font-size: 200px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: all 0.4s;
+    /* cursor: pointer; */
+    cursor: default;
+}
+
+.project-card:hover .project-number {
+    /* display:block; */
+    opacity: 1;
+}
+
+.project-number-right {
+    right: -40px;
+    top: -45px;
+}
+
+.project-number-left {
+    left: -40px;
+    top: -45px;
+}
+
+#project1 {
+    margin-right: 120px;
+    background-image: url(PNG/projects/Project1.png);
+}
+
+#project2 {
+    margin-left: 120px;
+    background-image: url(PNG/projects/Project2.png);
+}
+
+#project3 {
+    margin-right: 120px;
+    background-image: url(PNG/projects/Project3.png);
+}
+
+#project4 {
+    margin-left: 120px;
+    background-image: url(PNG/projects/Project4.png);
+}
+
+
+.project-content {
+    position: absolute;
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2em;
+    bottom: 20%;
+    gap: 1em;
+    transition: all 0.4s;
+}
+
+.project-content-left {
+    left: 10%;
+}
+
+.project-content-right {
+    right: 10%;
+}
+
+.project-heading {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.project-subHeading {
+    width: 70%;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.project-skills-container {
+    display: flex;
+    width: 60%;
+    gap: 10px;
+    flex-wrap: wrap;
+    transition: all 0.5s;
+}
+
+.project-skill-container img {
+    transition: all 0.5s;
+}
+
+.project-skills-container img:hover {
+    transform: scale(1.8);
+}
+
+.project-skill {
+    width: 40px;
+}
+
+.btn-grp {
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+
+.icon {
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    transition: all 0.4s;
+}
+
+.icon:hover {
+    transform: scale(1.3);
+    color: var(--mahnoor);
+
+}
+
+
+.project-card:hover .project-content {
+    transform: scale(1.1);
+}
+
+@media (max-width:1300px) {
+    .page-header {
+        padding-top: 30px;
+        color: var(--bgOrange);
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .project-container {
+        padding: 5px;
+        margin: 10px;
+        gap: 60px;
+    }
+
+    .project-card {
+        width: 100%;
+        height: 300px;
+    }
+
+    .project-card {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .project-content {
+        scale: 0.5;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+
+    .project-content-left {
+        left: 0;
+    }
+
+    .project-heading {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .project-sub-heading {
+        width: 100%;
+    }
+
+    #project2 {
+        margin-left: 0;
+    }
+
+    #project4 {
+        margin-left: 0;
+    }
+
+    .project-skill-container {
+        width: 100%;
+    }
+
+    .project-skill {
+        width: 35px;
+    }
+
+    .project-card:hover .project-number {
+        display: none;
+    }
+
+    .project-card:hover .project-content {
+        scale: 0.55;
+    }
+}

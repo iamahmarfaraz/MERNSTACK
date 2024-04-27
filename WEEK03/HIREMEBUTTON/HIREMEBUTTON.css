@@ -1,0 +1,38 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #e84949;
+    padding: 0.8rem 2.3rem;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    z-index: 1;
+}
+
+.button::before{
+    /* By this actual content se pehle content add hojayega */
+    content: "";
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Starting me black bg nhi dikhega so */
+    transform: scaleX(0);
+    /* kidhr se kidhr hoga transition */
+    transform-origin: left;
+    transition: all 1s;
+    z-index: -1;
+}
+
+.button:hover::before{
+    transform: scaleX(1);
+}

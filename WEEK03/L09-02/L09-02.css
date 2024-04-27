@@ -1,0 +1,41 @@
+.container {
+    border: 4px solid yellow;
+    background-color: #00ffff;
+    height: 600px;
+    display: grid;
+    /* grid-template-rows: 30px 500px 30px;
+    grid-template-columns: 200px 400px;
+    grid-template-areas:
+        "hd hd" /*Pehle row me jo 2 column hai unke naam*/
+    /* "side main"
+        "ft ft"; */
+
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 600px;
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "side side side main main main main main"
+        "ft ft ft ft ft ft ft ft";
+
+}
+
+.box {
+    border: 2px solid rgb(230, 106, 242);
+    background-color: brown;
+}
+
+#Header {
+    grid-area: hd;
+}
+
+#SideBar {
+    grid-area: side;
+}
+
+#Content {
+    grid-area: main;
+}
+
+#Footer {
+    grid-area: ft;
+}

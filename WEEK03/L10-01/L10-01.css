@@ -1,0 +1,34 @@
+:root {
+    /* VARIABLE INITIALIZED */
+    --ahmar: #cf1e1e;
+    --mahnoor: #415ce1;
+}
+
+.container {
+    height: 500px;
+    width: 500px;
+    /* VARIABLE USED */
+    background-color: var(--ahmar);
+    border: 3px solid black;
+    display: flex;
+}
+
+.box {
+    border: 2px solid greenyellow;
+    background-color: var(--mahnoor);
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    /* transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: 2s;
+    transition-delay: 1s; */
+
+    /* OR */
+
+    transition: background-color 1s ease-in;
+}
+
+.box:hover {
+    background-color: #e9238c;
+}

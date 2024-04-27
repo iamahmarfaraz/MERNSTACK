@@ -1,0 +1,80 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(6, 86, 86);
+    border: 4px solid rgb(147, 20, 20);
+    height: 700px;
+    width: 504px;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 100px 400px;
+    grid-template-rows: 30px 1fr 30px;
+    /* grid-gap: 3px; */
+    grid-template-areas:
+        "hd hd"
+        "side main"
+        "ft ft";
+}
+
+.box {
+    background-color: rgb(236, 236, 96);
+    border: 1px solid black;
+
+}
+
+#box1 {
+    grid-area: hd;
+}
+
+#box2 {
+    grid-area: side;
+}
+
+#box3 {
+    grid-area: main;
+}
+
+#box4 {
+    grid-area: ft;
+}
+
+@media(min-width : 363px) and (max-width : 800px){
+    .container {
+        background-color: rgb(6, 86, 86);
+        border: 4px solid rgb(147, 20, 20);
+        height: 700px;
+        width: 504px;
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: 100px 400px;
+        grid-template-rows: 30px 1fr 30px;
+        /* grid-gap: 3px; */
+        grid-template-areas:
+            "hd hd"
+            "side main main main main main main main"
+            "ft ft";
+    }
+}
+
+@media(max-width : 362px) {
+    /* jaise hi 504px se choti screen pe aayenge ye nya style apply ho jayega */
+    .container {
+        background-color: rgb(6, 86, 86);
+        border: 4px solid rgb(196, 21, 21);
+        height: 700px;
+        width: 504px;
+        display: grid;
+        grid-template-columns: 100px 400px;
+        grid-template-rows: 30px 1fr 1fr 30px;
+        grid-gap: 3px;
+        grid-template-areas:
+            "hd hd"
+            "side side"
+            "main main"
+            "ft ft";
+    }
+}

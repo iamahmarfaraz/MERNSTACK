@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    height: 215px;
+    background-color: yellow;
+    border: 2px solid red;
+}
+
+.box {
+    width: 212px;
+    height: 212px;
+    border: 2px solid green;
+    background-color: aqua;
+    /* ANIMATION */
+    animation-name: Ahmar;
+    animation-duration: 3s;
+    animation-iteration-count: 2;  /*Kitne baar chalega animation*/
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+    font-weight: 500;
+}
+
+@keyframes Ahmar{
+    from{
+        width: 212px;
+    }
+    to{
+        width: 800px;
+    }
+}
