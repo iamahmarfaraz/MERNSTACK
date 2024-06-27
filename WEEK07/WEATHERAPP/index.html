@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="PNG/heading-bg2.jpg" as="image">
+    <link rel="preload" href="PNG/PNG/body-bg1.jpg" as="image">
+    <link rel="preload" href="PNG/PNG/windspeed.jpg" as="image">
+    <link rel="preload" href="PNG/PNG/humid.jpg" as="image">
+    <link rel="preload" href="PNG/PNG/cld.jpg" as="image">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/helix.js"></script>
+
+    <!-- Default values shown -->
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- <l-helix
+          size="60"
+          speed="0.9"
+          color="red" 
+        ></l-helix> -->
+
+        <h1>Weather App</h1>
+
+
+        <div class="tab-container">
+            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+
+        <div class="weather-container">
+
+
+            <!-- Grant Location Container -->
+            <div class="sub-container grant-location-container">
+                <img src="PNG/location.png" alt="" width="80" height="80" loading="lazy">
+                <p>Grant Location Access</p>
+                <p>Allow access to get weather information</p>
+                <button class="btn" data-grantAccess>Grant Access</button>
+            </div>
+
+            <!-- Search info container -->
+            <form class="form-container" data-searchForm>
+                <div class="InputContainer">
+                    <input placeholder="Search.." id="input" class="input" name="text" type="text" data-searchInput>
+                </div>
+                <button class="btn srch" type="submit"><img src="PNG/search.png" alt="" width="20" height="20"
+                        loading="lazy"></button>
+            </form>
+
+            <!-- Loading Screen Container -->
+            <div class="sub-container loadflex loading-container">
+                <l-helix size="70" speed="0.9" color="red"></l-helix>
+                <p>Loading</p>
+            </div>
+
+            <!-- Show Weather Info -->
+            <div class="sub-container user-info-container">
+
+                <!-- City and Flag -->
+                <div class="name">
+                    <p data-cityName></p>
+                    <img loading="lazy" data-countryIcon>
+                </div>
+
+                <!-- Weather Description -->
+                <p data-weatherDesc></p>
+
+                <!-- Weather icon -->
+                <img data-weatherIcon>
+
+                <!-- Temperature -->
+                <p data-temp></p>
+
+                <!-- Card Div -->
+                <div class="parameter-container">
+
+                    <!-- Card1 -->
+                    <div class="parameter windspeed">
+
+                            <img src="PNG/wind.png" alt="" loading="lazy">
+                            <p>windspeed</p>
+                            <p data-windspeed></p>
+                        <div class="blob"></div>
+                    </div>
+
+                    <!-- Card2 -->
+                    <div class="parameter humid">
+                        <img src="PNG/humidity.png" alt="" loading="lazy">
+                        <p>humidity</p>
+                        <p data-humidity></p>
+                    </div>
+
+                    <!-- Card3 -->
+                    <div class="parameter cld">
+                        <img src="PNG/cloud.png" alt="" loading="lazy">
+                        <p>Clouds</p>
+                        <p data-cloudiness></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
