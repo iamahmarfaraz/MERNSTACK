@@ -28,12 +28,13 @@ function App() {
   // Variation 4 -> before adding eventlistener it checks whether they have 
   //eventlistener before or not ,improvising ur performance
   useEffect(() => {
-  
     console.log("Listener Added");
   
     return () => {
       console.log("Listener Removed");
     }
+
+    // in this line34 will get executed first then line31 will get executed
   }, [text]);
 
 
