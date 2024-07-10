@@ -7,6 +7,9 @@ module.exports = {
         bgDark: "#22223b",
         bgDark2: "#4a4e69",
       },
+      outline: {
+        '4-auto-focus-ring': '4px auto -webkit-focus-ring-color',
+      },
     },
   },
   plugins: [],

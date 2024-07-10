@@ -11,6 +11,7 @@ const App = () => {
 
   const [courses, setcourses] = useState([]);
   const [Loading, setLoading] = useState(true);
+  const [category, setCategory] = useState(filterData[0].title);
 
   async function callingAPI(){
     setLoading(true)
@@ -19,7 +20,7 @@ const App = () => {
       let output = await apiCall.json();
       console.log("API Call Successfull");
 
-      setcourses(output);
+      setcourses(output.data);
     } 
 
     catch (error) {
@@ -36,16 +37,16 @@ const App = () => {
   }, []);
 
   return(
-    <div>
+    <div className="flex flex-col min-h-screen min-w-full ">
       <div>
         <Navbar></Navbar>
       </div>
       <div>
-        <Filter filterData ={filterData}></Filter>
+        <Filter filterData ={filterData} category={category} setCategory={setCategory}></Filter>
       </div>
       <div>
         {
-          Loading ? (<Spinner/>) : (<Cards courses = {courses} ></Cards>)
+          Loading ? (<Spinner/>) : (<Cards courses = {courses} category = {category} ></Cards>)
         } 
       </div> 
     </div>

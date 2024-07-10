@@ -8,7 +8,7 @@
 .wrapper{
     width: 100vw;
     height: 100vh;
-    background-image: url(./PNG/gradient-bg.jpg);
+    background-image: url(./PNG/web-bg.jpg);
     background-size: cover;
     background-position: center;
     display: grid;
@@ -21,7 +21,7 @@
     top:3rem;
     left:50%;
     transform:translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.245);
     border-radius: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.25);
     padding: 0.5rem 3rem;
@@ -32,9 +32,9 @@
 .tic-tac-toe{
     width:90%;
     max-width:20rem;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.231);
     border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.35);
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -72,9 +72,9 @@
     bottom:3rem;
     left:50%;
     transform:translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.215);
     border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.35);
     padding: 0.5rem 2rem;
     cursor:pointer;
     display: none;
@@ -85,6 +85,14 @@
 }
 
 .win{
-    background-color: rgba(0, 255, 0, 0.3);
+    background-color: rgba(0, 255, 0, 0.36);
+}
+
+@media only screen and (max-width : 620px) {
+    .wrapper{
+        background-image: url(./PNG/phone-bg.jpg);
+        background-size: cover;
+        background-position: center;
+    }
 }
 
