@@ -40,10 +40,11 @@ function App() {
       <form action="">
         <input type="text" placeholder = "Full Name" onChange={changeHandler} name='fullName' value={formData.fullName}/>
         <input type="text" placeholder = "Father's Name" onChange={changeHandler} name='fatherName' value={formData.fatherName} />
-        <input type="email" name="email" id="" placeholder='Enter your Email' onChange={changeHandler} value={formData.email/>
+        <input type="email" name="email"  placeholder='Enter your Email' onChange={changeHandler} value={formData.email}/>
       </form>
     </div>
   );
 }
+
 
 export default App;
